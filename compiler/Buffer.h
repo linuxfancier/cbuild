@@ -9,9 +9,9 @@ public:
 	~Buffer();
 	Buffer& operator=(const Buffer&);
 	Buffer& operator++();
-	Buffer& operator++(int);
+	Buffer operator++(int);
 	Buffer& operator--();
-	Buffer& operator--(int);
+	Buffer operator--(int);
 	char* GetBuffer() const { return buffer; }
 	char GetCurChar() const { return buffer[position]; }
 	int GetCapacity() const { return capacity; }
